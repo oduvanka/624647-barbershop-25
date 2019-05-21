@@ -101,3 +101,14 @@ a {
 .button:active {
   background-color: #663d15;
 }
+
+.appointment-item input {
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.appointment-item input:focus {
+  border-color: #663d15;
+}
