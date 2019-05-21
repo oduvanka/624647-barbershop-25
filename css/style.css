@@ -122,6 +122,28 @@ a {
   border-color: #663d15;
 }
 
+.page-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcumps {
+  list-style: none;
+}
+
+.breadcumps a {
+  color: #000000;
+}
+
+.breadcumps a:hover,
+.breadcumps a:focus {
+  text-decoration: underline;
+}
+
+.breadcumps-current {
+  color: #aba9a7;
+}
+
 .main-footer {
   color: #ffffff;
 
