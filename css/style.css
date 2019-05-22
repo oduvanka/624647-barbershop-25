@@ -271,6 +271,30 @@ a {
   list-style: none
 }
 
+.slogan b {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.materials h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.materials ul {
+  list-style: none;
+}
+
+.prices h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.about h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
 .main-footer {
   color: #ffffff;
 
