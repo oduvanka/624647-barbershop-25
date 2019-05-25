@@ -346,7 +346,6 @@ a {
 .pagination-list {
   margin: 0;
   padding: 0;
-  margin-bottom: 49px;
 
   list-style: none;
 }
@@ -444,6 +443,10 @@ a {
   background-image: url("../img/pattern-dark.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.inner-page .main-footer {
+  margin-top: 49px;
 }
 
 .main-footer .container {
