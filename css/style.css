@@ -178,6 +178,9 @@ a {
 }
 
 .index-columns h2 {
+  margin: 0;
+  padding: 0;
+
   font-size: 30px;
   line-height: 42px;
 }
@@ -187,6 +190,9 @@ a {
 }
 
 .news-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -423,26 +429,56 @@ a {
   list-style: none
 }
 
+.slogan {
+  margin-bottom: 57px;
+}
+
 .slogan b {
   font-size: 48px;
   line-height: 60px;
 }
 
+.info-columns {
+  display: flex;
+  margin-bottom: 63px;
+}
+
+.materials {
+  width: 240px;
+  margin-right: 240px;
+}
+
 .materials h2 {
+  margin: 0;
+  padding: 0;
+
   font-size: 24px;
   line-height: 30px;
 }
 
-.materials ul {
+.materials-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.prices {
+  width: 460px;
+}
+
 .prices h2 {
+  margin: 0;
+  padding: 0;
+
   font-size: 24px;
   line-height: 30px;
 }
 
 .about h2 {
+  margin: 0;
+  padding: 0;
+
   font-size: 24px;
   line-height: 30px;
 }
@@ -521,6 +557,9 @@ a {
 }
 
 .modal h2 {
+  margin: 0;
+  padding: 0;
+
   font-size: 30px;
   line-height: 42px;
 }
