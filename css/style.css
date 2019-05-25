@@ -223,11 +223,19 @@ a {
 }
 
 .page-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
   font-size: 30px;
   line-height: 42px;
 }
 
 .breadcrumbs {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 49px;
+
   list-style: none;
 }
 
@@ -242,6 +250,15 @@ a {
 
 .breadcrumbs-current {
   color: #aba9a7;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 220px;
 }
 
 .filter fieldset {
@@ -269,13 +286,31 @@ a {
   opacity: 0.5;
 }
 
+.catalog {
+  width: 700px;
+}
+
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+
   list-style: none;
 }
 
 .catalog-item {
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
   background-color: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -309,6 +344,10 @@ a {
 }
 
 .pagination-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 49px;
+
   list-style: none;
 }
 
