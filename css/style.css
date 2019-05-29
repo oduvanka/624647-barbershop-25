@@ -126,6 +126,8 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
   width: 620px;
   margin: 0;
   padding: 0;
@@ -133,34 +135,59 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.site-navigation a {
-  color: #ffffff;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
-  background-color: #242424;
-}
-
 .user-navigation {
-  width: 140px;
+  display: flex;
+  max-width: 140px;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.inner-page .user-navigation {
-  margin-left: auto;
-}
-
+.site-navigation a,
 .user-navigation a {
+  display: block;
+  padding: 25px 20px;
+  
+  vertical-align: middle;
   color: #ffffff;
 }
 
+.site-navigation a:hover,
+.site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
   background-color: #242424;
+}
+
+.user-navigation .login-link {
+  position: relative;
+  padding-left: 50px;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 24px;
+  width: 16px;
+  height: 18px;
+
+  background-image: url("../img/icon/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before {
+  opacity: 1;
+}
+
+.inner-page .user-navigation {
+  margin-left: auto;
 }
 
 .features {
