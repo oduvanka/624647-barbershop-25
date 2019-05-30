@@ -812,12 +812,37 @@ input[type="radio"].visually-hidden {
 }
 
 .slogan {
+  position: relative;
   margin-bottom: 57px;
+
+  text-align: center;
 }
 
 .slogan b {
   font-size: 48px;
   line-height: 60px;
+}
+
+.slogan::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 160px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.slogan::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 160px;
+  height: 2px;
+
+  background-color: #000000;
 }
 
 .info-columns {
@@ -833,6 +858,7 @@ input[type="radio"].visually-hidden {
 .materials h2 {
   margin: 0;
   padding: 0;
+  margin-bottom: 24px; 
 
   font-size: 24px;
   line-height: 30px;
@@ -845,6 +871,29 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.material-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.material-item:last-child {
+  margin-bottom: 0;
+}
+
+.material-item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+
+  transform: rotate(45deg);
+}
+
 .prices {
   width: 460px;
 }
@@ -852,17 +901,49 @@ input[type="radio"].visually-hidden {
 .prices h2 {
   margin: 0;
   padding: 0;
+  margin-bottom: 31px;
 
   font-size: 24px;
   line-height: 30px;
 }
 
+.prices table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.prices th, td {
+  width: 231px;
+  padding: 7px 17px 8px 17px;
+  
+  border: 2px solid #000000;
+}
+
+.prices .column-price {
+  text-align: center;
+}
+
 .about h2 {
   margin: 0;
   padding: 0;
+  margin-bottom: 24px;
 
   font-size: 24px;
   line-height: 30px;
+}
+
+.about p {
+  display: inline-block;
+  width: 380px;
+  margin: 0;
+  padding: 0;
+  margin-right: 100px;
+  margin-bottom: 35px;
+}
+
+.about p:last-child {
+  margin-right: 0;
 }
 
 .main-footer {
