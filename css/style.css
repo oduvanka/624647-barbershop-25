@@ -400,11 +400,36 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-bottom: 49px;
 
   list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-right: 42px;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -25px;
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+
+  transform: rotate(45deg);
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
 }
 
 .breadcrumbs a {
@@ -420,6 +445,10 @@ input[type="radio"].visually-hidden {
   color: #aba9a7;
 }
 
+.breadcrumbs-current::after {
+  display: none;
+}
+
 .catalog-columns {
   display: flex;
   justify-content: space-between;
@@ -430,17 +459,43 @@ input[type="radio"].visually-hidden {
 }
 
 .filter fieldset {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+
   border: none;
 }
 
+.filter fieldset:first-child {
+  margin-bottom: 35px;
+}
+
 .filter legend {
+  margin-bottom: 26px;
+
   font-size: 24px;
   line-height: 30px;
 }
 
 .filter ul {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
   line-height: 18px;
+}
+
+.filter-option {
+  margin-bottom: 19px;
+  padding-left: 45px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
 }
 
 .filter-input:hover + label,
@@ -452,6 +507,53 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   opacity: 0.5;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -42px;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #000000;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -38px;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/icon/cross.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -42px;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -36px;
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+  border-radius: 50%;
 }
 
 .catalog {
@@ -486,19 +588,41 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item a {
+  display: flex;
+  flex-direction: column;
+
   color: #000000;
 }
 
 .catalog-item h3 {
+  order: 1;
+  margin: 17px 15px 12px 16px;
+
   font-size: 14px;
   line-height: 18px;
 }
 
 .catalog-category {
+  display: block;
+
   text-transform: none;
 }
 
+.catalog-item-image {
+  width: 220px;
+  height: 165px;
+  margin: 0;
+}
+
+.catalog-item-price {
+  display: flex;
+  margin: 0 15px 15px 15px;
+}
+
 .catalog-item-price b {
+  width: 112px;
+  padding: 13px 25px 11px;
+
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -507,11 +631,17 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-price .button {
+  width: 50px;
+  padding: 13px 18px 11px;
+  margin-right: 0;
+
   line-height: 20px;
   color: #ffffff;
 }
 
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -528,6 +658,19 @@ input[type="radio"].visually-hidden {
 .pagination-list a:focus,
 .pagination-list a:active {
   background-color: #663d15;
+}
+
+.pagination-item {
+  margin-right: 5px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+.pagination-item a {
+  display: block;
+  padding: 10px 19px;
 }
 
 .pagination-item-current a {
