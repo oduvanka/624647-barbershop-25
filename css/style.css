@@ -85,6 +85,10 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
 }
 
+.modal {
+  display: none;
+}
+
 .main-header {
   margin-bottom: 70px;
 }
