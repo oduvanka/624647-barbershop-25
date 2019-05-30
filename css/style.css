@@ -94,7 +94,7 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .main-header {
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 
   background-color: #000000;
 }
@@ -161,9 +161,8 @@ input[type="radio"].visually-hidden {
 .site-navigation a,
 .user-navigation a {
   display: block;
-  padding: 25px 20px;
+  padding: 25px 20px 27px 20px;
   
-  vertical-align: middle;
   color: #ffffff;
 }
 
@@ -268,7 +267,7 @@ input[type="radio"].visually-hidden {
 .index-columns h2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
   font-size: 30px;
   line-height: 42px;
@@ -281,13 +280,13 @@ input[type="radio"].visually-hidden {
 .news-list {
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 
   list-style: none;
 }
 
 .news-item {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .news-item p {
@@ -298,8 +297,16 @@ input[type="radio"].visually-hidden {
   text-transform: none;
 }
 
+.news .button {
+  width: 80px;
+}
+
 .gallery {
   width: 300px;
+}
+
+.gallery h2 {
+  margin-bottom: 22px;
 }
 
 .gallery-container {
@@ -342,7 +349,13 @@ input[type="radio"].visually-hidden {
 
 .contacts p {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+.contacts .button {
+  width: 90px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .appointment {
@@ -351,7 +364,7 @@ input[type="radio"].visually-hidden {
 
 .appointment-info {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .appointment-form {
@@ -363,19 +376,19 @@ input[type="radio"].visually-hidden {
 .appointment-item {
   width: 140px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .appointment-item label {
   display: block;
-  margin-bottom: 9px;
-  margin-left: 15px;
+  margin-bottom: 6px;
+  margin-left: 18px;
 }
 
 .appointment-item input {
   box-sizing: border-box;
   width: 140px;
-  padding: 8px 15px 7px 15px;
+  padding: 7px 15px 7px 15px;
 
   font: inherit;
 
@@ -390,7 +403,7 @@ input[type="radio"].visually-hidden {
 .appointment .button {
   display: block;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 14px;
   margin-right: 0;
 }
 
@@ -409,23 +422,23 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-bottom: 49px;
+  margin-bottom: 47px;
 
   list-style: none;
 }
 
 .breadcrumbs li {
   position: relative;
-  margin-right: 42px;
+  margin-right: 40px;
 }
 
 .breadcrumbs li::after {
   content: "";
   position: absolute;
-  top: 7px;
-  right: -25px;
-  width: 8px;
-  height: 8px;
+  top: 8px;
+  right: -24px;
+  width: 7px;
+  height: 7px;
 
   background-color: #000000;
 
@@ -465,17 +478,15 @@ input[type="radio"].visually-hidden {
 .filter fieldset {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   border: none;
 }
 
-.filter fieldset:first-child {
-  margin-bottom: 35px;
-}
-
 .filter legend {
-  margin-bottom: 26px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
 
   font-size: 24px;
   line-height: 30px;
@@ -491,7 +502,7 @@ input[type="radio"].visually-hidden {
 
 .filter-option {
   margin-bottom: 19px;
-  padding-left: 45px;
+  padding-left: 44px;
 }
 
 .filter-option label {
@@ -517,7 +528,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 0;
-  left: -42px;
+  left: -45px;
   width: 16px;
   height: 16px;
 
@@ -528,7 +539,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 4px;
-  left: -38px;
+  left: -41px;
   width: 12px;
   height: 12px;
   background-image: url("../img/icon/cross.svg");
@@ -540,7 +551,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: -1px;
-  left: -42px;
+  left: -43px;
   width: 16px;
   height: 16px;
 
@@ -552,7 +563,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 5px;
-  left: -36px;
+  left: -37px;
   width: 8px;
   height: 8px;
 
@@ -562,6 +573,7 @@ input[type="radio"].visually-hidden {
 
 .catalog {
   width: 700px;
+  padding-top: 5px;
 }
 
 .catalog-list {
@@ -600,7 +612,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item h3 {
   order: 1;
-  margin: 17px 15px 12px 16px;
+  margin: 14px 15px 13px 16px;
 
   font-size: 14px;
   line-height: 18px;
@@ -625,7 +637,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-price b {
   width: 112px;
-  padding: 13px 25px 11px;
+  padding: 12px 25px 11px 25px;
 
   font-size: 14px;
   line-height: 20px;
@@ -636,7 +648,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-price .button {
   width: 50px;
-  padding: 13px 18px 11px;
+  padding: 12px 18px 11px 18px;
   margin-right: 0;
 
   line-height: 20px;
@@ -691,8 +703,13 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+.product {
+  padding-top: 7px;
+}
+
 .product-photos {
   width: 460px;
+  margin-bottom: 3px;
 }
 
 .product-photos-preview {
@@ -728,8 +745,8 @@ input[type="radio"].visually-hidden {
 }
 
 .product-info {
-  width: 380px;
-  padding-top: 23px;
+  width: 390px;
+  padding-top: 19px;
 }
 
 .product-info p {
@@ -758,12 +775,12 @@ input[type="radio"].visually-hidden {
 
 .product-info .product-price {
   display: flex;
-  margin-bottom: 63px;
+  margin-bottom: 62px;
 }
 
 .product-price b {
-  width: 112px;
-  padding: 13px 36px 11px 36px;
+  width: 110px;
+  padding: 12px 24px 11px 24px;
 
   line-height: 20px;
   text-align: center;
@@ -774,8 +791,8 @@ input[type="radio"].visually-hidden {
 }
 
 .product-price .button {
-  padding-left: 17px;
-  padding-right: 17px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .product-info h3 {
@@ -796,16 +813,16 @@ input[type="radio"].visually-hidden {
 .product-info li {
   position: relative;
 
-  padding-left: 23px;
+  padding-left: 22px;
 }
 
 .product-info li::before {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 8px;
   left: 2px;
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 
   background-color: #000000;
   transform: rotate(45deg);
@@ -813,14 +830,16 @@ input[type="radio"].visually-hidden {
 
 .slogan {
   position: relative;
-  margin-bottom: 57px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 62px;
 
   text-align: center;
 }
 
 .slogan b {
   font-size: 48px;
-  line-height: 60px;
+  line-height: 48px;
 }
 
 .slogan::before {
@@ -847,7 +866,7 @@ input[type="radio"].visually-hidden {
 
 .info-columns {
   display: flex;
-  margin-bottom: 63px;
+  margin-bottom: 59px;
 }
 
 .materials {
@@ -858,7 +877,7 @@ input[type="radio"].visually-hidden {
 .materials h2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 24px; 
+  margin-bottom: 26px; 
 
   font-size: 24px;
   line-height: 30px;
@@ -874,7 +893,7 @@ input[type="radio"].visually-hidden {
 .material-item {
   position: relative;
   padding-left: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 .material-item:last-child {
@@ -899,16 +918,17 @@ input[type="radio"].visually-hidden {
 }
 
 .prices h2 {
+  width: 175px;
   margin: 0;
   padding: 0;
-  margin-bottom: 31px;
+  margin-bottom: 33px;
 
   font-size: 24px;
   line-height: 30px;
 }
 
 .prices table {
-  width: 100%;
+  width: 460px;
 
   border-collapse: collapse;
 }
@@ -927,7 +947,7 @@ input[type="radio"].visually-hidden {
 .about h2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
 
   font-size: 24px;
   line-height: 30px;
@@ -935,11 +955,11 @@ input[type="radio"].visually-hidden {
 
 .about p {
   display: inline-block;
-  width: 380px;
+  width: 385px;
   margin: 0;
   padding: 0;
-  margin-right: 100px;
-  margin-bottom: 35px;
+  margin-right: 93px;
+  margin-bottom: 28px;
 }
 
 .about p:last-child {
@@ -948,7 +968,7 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
   margin-top: 65px;
-  padding: 67px 0 53px 0;
+  padding: 56px 0 53px 0;
 
   color: #ffffff;
 
