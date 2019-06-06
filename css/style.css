@@ -866,7 +866,7 @@ input[type="radio"].visually-hidden {
 .inner-content .big-heading {
   display: flex;
   align-items: center;
-  margin-top: 55px;
+  margin-top: 0px;
   margin-bottom: 62px;
 
   font-size: 48px;
@@ -931,7 +931,7 @@ input[type="radio"].visually-hidden {
 
 .custom-list-1 li {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding-left: 20px;
 }
 
@@ -956,7 +956,7 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-content td {
-  padding: 10px 15px;
+  padding: 8px 15px;
 
   border: 2px solid #000000;
 }
