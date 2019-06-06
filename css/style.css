@@ -145,6 +145,21 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.site-navigation-current {
+  position: relative;
+}
+
+.site-navigation-current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  height: 5px;
+
+  background-color: #ffffff;
+}
+
 .user-navigation {
   display: flex;
   max-width: 140px;
