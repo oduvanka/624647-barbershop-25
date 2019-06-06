@@ -85,10 +85,6 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
 }
 
-.modal {
-  display: none;
-}
-
 .main-header {
   margin-bottom: 70px;
 }
@@ -1072,13 +1068,19 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+/* Всплывающая форма*/
+
 .modal {
+  position: fixed;
+
   color: #000000;
 
   background-color: #f8f3f0;
   background-image: url("../img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
 .modal h2 {
@@ -1089,14 +1091,130 @@ input[type="radio"].visually-hidden {
   line-height: 42px;
 }
 
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close:before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+
+  background-color: #d0d0d0;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-login {
+  display: none;
+  top: 120px;
+  left: 50%;
+  width: 300px;
+  margin-left: -230px;
+  padding: 50px 80px;
+}
+
 .login-form input[type="text"],
 .login-form input[type="password"] {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 10px 15px;
+  padding-right: 40px;
+
   font: inherit;
   color: #000000;
   text-transform: uppercase;
 
   background-color: #f9f6f3;
   border: 2px solid #000000;
+}
+
+.login-form input:focus {
+  border-color: #663d15;
+}
+
+.login-icon-user {
+  background-image: url("../img/icon/user.svg");
+  background-position: 270px center;
+  background-repeat: no-repeat;
+}
+
+.login-icon-password {
+  background-image: url("../img/icon/lock.svg");
+  background-position: 270px center;
+  background-repeat: no-repeat;
+}
+
+.login-form .login-password-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.login-remember-checkbox:hover + label,
+.login-remember-checkbox:focus + label {
+  color: #663d15;
+}
+
+.login-remember-label {
+  position: relative;
+  padding-left: 30px;
+
+  cursor: pointer;
+}
+
+.login-remember-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid #000000;
+}
+
+.login-remember-checkbox:hover + .login-remember-label::before {
+  border-color: #663d15;
+}
+
+.login-remember-checkbox:focus + .login-remember-label::before {
+  border-color: #663d15;
+
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.login-remember-label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/icon/cross.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .restore {
@@ -1107,4 +1225,25 @@ input[type="radio"].visually-hidden {
 .restore:hover,
 .restore:focus {
   text-decoration: none;
+}
+
+.login-form .button {
+  width: 100%;
+  margin-right: 0;
+}
+
+.modal-map {
+  display: none;
+  top: 50%;
+  left: 50%;
+  width: 766px;
+  height: 561px;
+  margin-top: -280px;
+  margin-left: -390px;
+
+  border: 7px solid #ffffff;
+}
+
+.modal-map p {
+  margin: 0;
 }
