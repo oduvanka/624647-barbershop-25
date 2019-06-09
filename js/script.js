@@ -5,6 +5,9 @@ var
   form = popup.querySelector("form");
   login = popup.querySelector("[name=login]"),
   password = popup.querySelector("[name=password]"),
+  mapLink = document.querySelector(".contacts-button-map"),
+  mapPopup = document.querySelector(".modal-map"),
+  mapClose = mapPopup.querySelector(".modal-close");
 
 var isStorageSupport = true;
 
@@ -61,6 +64,28 @@ form.addEventListener("submit", function(evt) {
   else {
     if (isStorageSupport) {
       localStorage.setItem("login", login.value);
+    }
+  }
+});
+
+/* Добавляет обработчик клика по кнопке Как проехать */
+mapLink.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("modal-show");
+});
+
+/* Добавляет обработчик клика по кнопке Закрыть в окне с картой */
+mapClose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-show");
+});
+
+/* Добавляет обработчик нажатия по клавише Esc при открытом окне с картой */
+window.addEventListener("keydown", function(evt) {
+  evt.preventDefault();
+  if (evt.keyCode === 27) {
+    if (mapPopup.classList.contains("modal-show")) {
+      mapPopup.classList.remove("modal-show");
     }
   }
 });
